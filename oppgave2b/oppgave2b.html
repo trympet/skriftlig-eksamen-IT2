@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Oppgave 2</title>
+  <link rel="stylesheet" href="assets/rammeverk/rammeverk.css">
+  <link rel="stylesheet" href="assets/stiler.css">
+</head>
+<body>
+  <header>
+    <h1 class="overskrift">Oppgave 2</h1>
+  </header>
+  <main>
+    <!-- Pikselkalkulator -->
+    <div class="form">
+      <form id="pikselkalkulator">
+        <h1 class="form-overskrift">Kalkuler pikselstørrelse!</h1>
+        <div class="form-row">
+          <div class="gruppe">
+            <label for="bredde">Bredde i antall piksler</label>
+            <input type="number" id="bredde" min="1" max="1920">
+            <span class="suffix">px</span>
+          </div>
+          <div class="gruppe">
+            <label for="høyde">Høyde i antall piksler</label>
+            <input type="number" id="høyde" min="1">
+            <span class="suffix">px</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <button type="submit">Kalkuler</button>
+        </div>
+      </form>
+      <div class="output">
+        <!-- Output fra kalkulatoren -->
+      </div>
+    </div>
+  </main>
+  <script src="oppgave2.js" type="module"></script>
+</body>
+</html>

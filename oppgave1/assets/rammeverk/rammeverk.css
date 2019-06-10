@@ -1,0 +1,230 @@
+* { box-sizing: border-box; }
+body {
+  background-color: #eeeeee; /* grå bakgrunn */
+  color: #212529;
+  font-weight: 400;
+  line-height: 1.5;
+  font-size: 1rem;
+  margin: 0;
+}
+@media only screen and (max-width: 600px) {
+  main {
+    /* fra 2rem 5rem til 2rem 2rem */
+    margin: 2rem 2rem !important;
+  }
+}
+main {
+  margin: 2rem 5rem;
+  position: relative;
+}
+section {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+header {
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  box-shadow: 0 4px 8px -3px rgba(17, 17, 17, 0.06);
+}
+header > .overskrift {
+  font-size: 1.5rem;
+  margin: 0 0 0 5rem;
+  position: absolute;
+  color: #4185f4;
+}
+
+button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  margin: .375rem;
+  padding: .84rem 2.14rem;
+  border: 0;
+  border-radius: .125rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  appearance: none;
+  background-color: #4285f4!important;
+  color: #fff;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+/* navigasjonsbar-stiler */
+nav {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #616161;
+  padding: 1rem 1rem;
+  margin-bottom: 2rem;
+  overflow-y: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,.5);
+}
+nav > .overskrift {
+  color: #fff;
+  font-size: 1.8rem;
+}
+nav > ul {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav > ul > li {
+  line-height: 1.5;
+  flex: 1 1 0;
+  display: block;
+}
+nav a,span {
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+  display: block;
+  color: #fff;
+}
+
+/* form stiler */
+.form {
+  background-color: #ffffff;
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+form {
+  margin: auto;
+  flex-direction: column;
+  display: flex;
+}
+.form-overskrift {
+  display: inline;
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.4rem;
+}
+.form-row {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+  position: relative;
+}
+.gruppe {
+  flex: 1 1 250px;
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.form-row input {
+  width: calc(100% - 4rem);
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding: 0.3rem 0 0.55rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+  border-bottom: 1px solid #ced4da;
+  border-radius: 0;
+  box-sizing: content-box;
+  background-color: transparent;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-row input[type="number"]:focus {
+  box-shadow: 0 1px 0 0 #4285f4;
+  border-bottom: 1px solid #4285f4;
+}
+.form-row input.ugyldig {
+  box-shadow: 0 1px 0 0 #f44242 !important;
+  border-bottom: 1px solid #f44242 !important;
+}
+label {
+  display: block;
+  font-size: 0.8rem;
+  color: #757575;
+}
+select {
+  display: inline-block;
+  width: 100%;
+  height: calc(1.5em + .75rem + 2px);
+  padding: .375rem 1.75rem .375rem .75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  vertical-align: middle;
+  /* pil opp+ned til høyre i select boksen */
+  background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3e%3cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3e%3c/svg%3e") no-repeat right .75rem center/8px 10px;  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  -webkit-appearance: none;
+  appearance: none;
+}
+/* form stiler slutt */
+
+/* CSS grid m cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  column-gap: 1rem;
+  row-gap: 1rem;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 3rem;
+}
+.card {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  /*max-width: 340px;*/
+}
+.card-bilde {
+  min-height: 210px;
+  background-color: #bdbdbd;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-body {
+  margin-top: auto;
+  padding: 1.3rem;
+}
+.card-body-overskrift {
+  font-size: 1.4rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+.card-footer {
+  padding: 0 1.3rem;
+  margin-bottom: 1rem;
+  margin-top: auto;
+  height: 2rem;
+}
+.card-footer-link {
+  cursor: pointer;
+  color: rgb(38, 153, 251);
+  padding-left: 1rem;
+  display: inline;
+  float: right;
+  font-weight: 600;
+  text-decoration: none;
+}

@@ -1,0 +1,53 @@
+/* Roboto font */
+@font-face {
+  font-family: "Roboto";
+  src:
+    local("Roboto"),
+    local("Roboto-Medium"),
+    url("fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+@font-face {
+  font-family: "Roboto";
+  src:
+    local("Roboto"),
+    local("Roboto-Regular"),
+    url("fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Roboto";
+  src:
+    local("Roboto"),
+    local("Roboto-Thin"),
+    url("fonts/Roboto-Thin.ttf");
+  font-weight: 300;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+}
+.hyttenavn {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.total-avstand {
+  font-size: 1.3rem;
+}
+p {
+  font-size: 1.2rem;
+}
+form {
+  padding-bottom: 2.5rem;
+  position: relative;
+}
+button[type=submit] {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0rem;
+  align-self: center;
+}
+button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
