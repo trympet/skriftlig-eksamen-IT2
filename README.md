@@ -4,6 +4,9 @@ Oppgave produsert og levert inn til skriftlig eksamen i IT 2 (REA3016), vår 201
 Oppgaven er skrevet i Javascript.
 
 # Oversikt
+
+Klikk for å se løsning til de ulike oppgavene.
+
 [Oppgave 1](https://trympet.github.io/skriftlig-eksamen-IT2/oppgave1/oppgave1.html "Oppgave 1")
 
 [Oppgave 2A](https://trympet.github.io/skriftlig-eksamen-IT2/oppgave2a/oppgave2.html "Oppgave 2A")
