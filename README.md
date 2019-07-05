@@ -10,4 +10,4 @@ Oppgaven er skrevet i Javascript.
 
 [Oppgave 2B](https://trympet.github.io/skriftlig-eksamen-IT2/oppgave2b/oppgave2b.html "Oppgave 2B")
 
-[Oppgave 3](https://trympet.github.io/skriftlig-eksamen-IT2/oppgave1b/oppgave3.html "Oppgave 3")
+[Oppgave 3](https://trympet.github.io/skriftlig-eksamen-IT2/oppgave3/oppgave3.html "Oppgave 3")
